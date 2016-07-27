@@ -53,7 +53,7 @@ node default {
   
   exec { 'updatemotd':
     path    => '/etc/motd',
-    command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
+    command => "echo cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
     unless  => ["/bin/test `/bin/grep 'Welcome to ${::fqdn}'"],
   }
 }
