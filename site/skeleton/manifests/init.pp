@@ -11,6 +11,6 @@ class skeleton {
     owner   => 'root',
     group   => 'root',
     require => File['/etc/skel'],
-    source  => 'puppet:///site/skeleton/files/bashrc',
+    source  => 'puppet:///modules/site/skeleton/files/bashrc',
   }
 }
