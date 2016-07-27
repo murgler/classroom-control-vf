@@ -56,4 +56,6 @@ node default {
     command => "/bin/echo cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
     unless  => ["/bin/test `/bin/grep 'Welcome to ${::fqdn}'"],
   }
+  
+  include users
 }
