@@ -60,4 +60,7 @@ node default {
   include users
   include skeleton
   include memcached
+  
+  $message = hiera('message', 'nothin here')
+  notify { $message: } 
 }
