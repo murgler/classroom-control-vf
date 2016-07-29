@@ -10,3 +10,7 @@ mod 'vcsrepo',
 
 mod 'puppetlabs/apache', '1.10.0'
 mod 'hunner/wordpress', '1.0.0'
+mod 'puppetlabs/concat'
+mod 'puppetlabs/mysql'
+mod 'puppetlabs/stdlib'
+
