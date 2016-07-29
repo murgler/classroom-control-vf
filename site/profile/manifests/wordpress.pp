@@ -1,5 +1,7 @@
 class profile::wordpress {
   include apache
   include wordpress
-  include 'mysql::server'
+  class {'mysql::server':
+    root_password  => 'puppet',
+  }
 }
