@@ -8,5 +8,5 @@ mod 'arioch/redis', '1.2.2'
 mod 'vcsrepo',
   :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo'
 
-mod 'puppetlabs/apache', '1.10.0
+mod 'puppetlabs/apache', '1.10.0'
 mod 'hunner/wordpress', '1.0.0'
